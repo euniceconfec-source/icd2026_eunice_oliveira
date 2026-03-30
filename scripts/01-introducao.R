@@ -2,8 +2,8 @@
 # DOCUMENTACAO DO SCRIPT
 # ============================================================
 # Arquivo: 01_introducao.R
-# Autor(a): <seu nome>
-# Data: <dd/mm/aaaa>
+# Autor(a): Eunice Oliveira
+# Data: 30/03/26
 # Objetivo: entender os fundamentos da linguagem R
 
 
@@ -13,6 +13,9 @@
 # BLOCO 0 - Configuracoes globais
 # ==========================================
 
+#  BLOCO 0 - Configuracoes globais ----------------------------------------
+
+
 # Ajusta localidade para portugues (datas, mensagens e formatos)
 Sys.setlocale("LC_ALL", "pt_BR.UTF-8")
 
@@ -20,6 +23,9 @@ Sys.setlocale("LC_ALL", "pt_BR.UTF-8")
 # ==========================================
 # BLOCO 1 - R como uma grande calculadora
 # ==========================================
+
+# BLOCO 1 - R como uma grande calculadora ---------------------------------
+
 
 # Carrega o pacote se ele tiver sido instalado
 library(tidyverse)
@@ -77,6 +83,9 @@ round(3.14159, digits = 2)
 # BLOCO 2 - Tipos Atômicos e classes
 # ============================================================
 
+#  BLOCO 2 - Tipos Atômicos e classes -------------------------------------
+
+
 # Os tipos de dados definem como os dados
 # são armazenados na memória.
 
@@ -116,6 +125,9 @@ f
 # ============================================================
 # BLOCO 3 - Vetores numericos e vetorizacao
 # ============================================================
+
+# BLOCO 3 - Vetores numericos e vetorizacao -------------------------------
+
 
 # Atalho de teclado para inserir <- :
 # Alt + - (Windows/Linux)
@@ -171,6 +183,9 @@ max(receita_diaria)
 # BLOCO 4 - Vetores
 # ============================================================
 
+#  BLOCO 4 - Vetores ------------------------------------------------------
+
+
 # vetor de caracteres (strings) com nome da empresa
 nome_empresa <- c("Loja A", "Loja B", "Loja C")
 # exibe o vetor criado
@@ -190,6 +205,9 @@ class(meta_batida)
 # BLOCO 5 - Criando uma tibble com dados ficticios de vendas
 # e primeiros exemplos com dplyr
 # ============================================================
+
+# BLOCO 5 - Criando uma tibble com dados ficticios de vendas # e p --------
+
 
 # Neste bloco vamos criar um pequeno conjunto de dados
 # semelhante a um banco de dados simples de vendas.
@@ -310,6 +328,9 @@ vendas_diarias |>
 # BLOCO 6 - Manipulação de dados com dplyr e uso do pipe
 # ============================================================
 
+# BLOCO 6 - Manipulação de dados com dplyr e uso do pipe ------------------
+
+
 # O operador pipe |> permite encadear operações
 # de forma mais legível.
 
@@ -413,6 +434,9 @@ vendas_diarias |>
 # BLOCO 7 - Visualizacao de dados com ggplot2
 # ============================================================
 
+#  BLOCO 7 - Visualizacao de dados com ggplot2 ----------------------------
+
+
 # Grafico 1 de barras da receita media por loja
 ggplot(receita_por_loja, aes(x = loja, y = receita_media)) +
   geom_col()
@@ -450,6 +474,9 @@ ggplot(vendas_diarias, aes(x = data, y = lucro, size = receita, color = loja)) +
 # ============================================================
 # BLOCO 8 - Resolução dos exercícios propostos nos slides
 # ============================================================
+
+#  BLOCO 8 - Resolução dos exercícios propostos nos slides ----------------
+
 
 
 # Solução do Ex. 1
