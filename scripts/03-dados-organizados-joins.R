@@ -30,13 +30,7 @@ receitas <- tribble(
 receitas
 
 # transforma receitas para o formato longo
-receitas_longo <- receitas |>
-  pivot_longer(
-    cols = c("T1", "T2", "T3", "T4"),
-    names_to = "trimestre", 
-    values_to = "receita"
-  )
-    
+   
 # exibe o resultado
 receitas_longo
 
